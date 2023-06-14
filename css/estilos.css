@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2? family= Geologica:wght@100..900 & family= Montserrat:wght@100..900 & display=swap');
+
+* {box-sizing: border-box;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    margin: 0;
+}
+
+nav,
+header,
+main
+
+ {
+    width: 100vw;
+    padding: 0 8.33vw;
+}
+
+/*animación*/
+header img {
+    width: 50px;
+    transform: rotate(0deg);
+    transform: scale();
+    transition: all 2s;
+}
+
+header img:hover {
+transform: rotate(180deg);
+}
+
+section {width: 100%;}
+
+section video {width: 30%;
+    margin-left: 29vw;
+}
+
+
+header {
+    height: 62vh;
+    text-align: center;
+}
+
+
+.mostrar {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 19vh;
+    left: 0vw;
+    background-color: black;
+    width: 100vw;
+    padding: 2vw;
+}
+
+
+/*barra de navegación superior*/
+nav {
+    color: white;
+    background-color: #CB012E;
+    height: 19vh;
+    padding: 0 8.33vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+nav div {
+    width: 24%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+
+nav a,
+nav h1,
+header h3,
+header h1 {
+
+    line-height: 125%;
+    vertical-align: top;
+    font-size: 40px;
+}
+
+
+/*diseñadora integral*/
+header h3 {
+    color:#CB012E;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/*adaptabilidad de imagenes*/
+main section div {
+    width: 45.83%;
+    margin-bottom: 40px; 
+  }
+  
+section div img {
+height: 100%;
+ width: 100%;
+justify-content: space-between;
+filter: grayscale(0%);
+transition: filter 0.5s;
+}
+
+/*trancisión*/
+main img:hover {
+    filter: grayscale(80%);
+}
+
+main  section:first-child {
+justify-content: space-between;
+display: flex;
+flex-wrap: wrap;
+}
+
+/*Cata Mattana*/
+nav h1 {
+    font-weight: 700;
+    margin: 0;
+}
+
+/*hover cambio de color*/
+nav h1:hover { 
+    color: rgba(245, 243, 243, 0.5);
+}
+
+/*portfolio creativo*/
+header h1 {
+    font-family: 'Geologica', sans-serif;
+}
+
+
+/*caracteristicas grales links*/
+a {
+    text-decoration: none;
+}
+
+/*párrafo*/
+header p,
+nav a,
+header a {
+    font-size: 20px;
+}
+
+/*links del menú*/
+nav a,
+header a {
+    color: white;
+}
+
+/*¿Te gusta? contactame*/
+header a {
+    color: #212529;
+    text-transform: capitalize;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+
+nav span {
+    display: none;
+}
+
+
+.icon-menu,
+.icon-icono-1,
+.icon-icono-2 {
+  
+    font-size: 6vw;
+}
+
+.icon-menu:hover {
+    color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+
+
+
+/*Adaptabilidad a las distintas pantallas*/
+@media(max-width:992px) {
+
+    nav div {
+        width: 40%;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+    
+    nav div {
+        display: none;
+    }
+    @media(max-width:992px) {
+
+        nav div {
+            width: 40%;
+        }
+    
+    }}
+    
+    
+    @media (max-width: 768px) {
+        
+        nav div {
+            display: none;
+        }
+        nav span {
+            display: inline;
+        }
+    
+        main section div {
+            width: 100%;
+            margin-top: 25px;
+            margin-bottom: 25px;
+        }}
